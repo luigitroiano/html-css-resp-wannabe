@@ -144,3 +144,89 @@ img {
   }
 }
 /* /media query */
+
+/* media query tablet bonus */
+@media screen and (max-width: 770px) and (min-width: 421px){
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    margin: 0;
+    font-size: 18px;
+  }
+  .row{
+    margin-top: 0;
+    width: 100%;
+    /* ricordarsi di mettere "width:100%" sennó rimane la width di riga 2 del css e quindi prende in considerazione i 992px e non la larghezza della viewport (vw) ridimensionata */
+  }
+  #lezioni>.row,
+  #why>.row{
+    background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    color: white;
+  }
+  #lezioni>.row,
+  #steps>.row,
+  #why>.row{
+    padding: 15px 0;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+  }
+
+  #lezioni .row img {
+    /* per centrare orizzontalmente */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #lezioni {
+    text-align: center;
+  }
+  #steps{
+    background-color: white;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right{
+    float: none;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0 2.5%;
+  }
+  #why .row>.first,
+  #why .row>.second{
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+    margin-top: 0;
+  }
+  h1{
+    font-size: 38px;
+  }
+  img{
+    height: 150px;
+  }
+  #lezioni .row img{
+    margin-top: 30px;
+    background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  }
+  #why .row img{
+    margin-top: 30px;
+    background-image: radial-gradient(circle, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  }
+  h3{
+    margin: 0;
+    font-size: 24px;
+  }
+  hr{
+    display: none;
+  }
+}
+/* /media query tablet bonus */
