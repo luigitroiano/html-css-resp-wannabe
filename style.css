@@ -73,12 +73,19 @@ img {
 }
 /* media query */
 @media screen and (max-width:420px){
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   body{
     margin: 0;
-    font-size: 26px;
+    font-size: 16px;
   }
   .row{
     margin-top: 0;
+    width: 100%;
+    /* ricordarsi di mettere "width:100%" sennó rimane la width di riga 2 del css e quindi prende in considerazione i 992px e non la larghezza della viewport (vw) ridimensionata */
   }
   #lezioni>.row,
   #why>.row{
@@ -92,8 +99,9 @@ img {
   #lezioni .row>.left,
   #lezioni .row>.right{
     float: none;
-    width: 95%;
+    width: 100%;
     margin: auto;
+    padding: 0 2.5%;
   }
   #steps{
     background-color: white;
@@ -102,20 +110,25 @@ img {
   #steps .row>.central,
   #steps .row>.right{
     float: none;
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-top: 30px;
+    padding: 0 2.5%;
   }
   #why .row>.first,
   #why .row>.second,
   #why .row>.third{
-    width: 95%;
+    width: 100%;
     margin-top: 30px;
     margin: auto;
+    padding: 0 2.5%;
   }
   h1{
-    font-size: 40px;
+    font-size: 36px;
     margin: 0;
+  }
+  img{
+    height: 150px;
   }
   #lezioni .row img,
   #why .row img{
@@ -123,7 +136,7 @@ img {
   }
   h3{
     margin: 0;
-    font-size: 32px;
+    font-size: 22px;
   }
   hr{
     border-style: solid;
